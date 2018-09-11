@@ -23,6 +23,8 @@
          -->
       <a class="main-nav__logo" href="#">
           <svg class="main-nav__logo-img main-nav__logo-img--mobile"><use xlink:href="img/sprite.svg#icon-logo-header-mobile"></use></svg>
+          <svg class="main-nav__logo-img main-nav__logo-img--tablet"><use xlink:href="img/sprite.svg#icon-logo-header-tablet"></use></svg>
+          <svg class="main-nav__logo-img main-nav__logo-img--desktop"><use xlink:href="img/sprite.svg#icon-logo-header-desktop"></use></svg>
       </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
@@ -40,35 +42,35 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
       <section class="downloads">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <p class="downloads__title">Взгляните на жизнь иначе!</p>
-        <a class="downloads__button button" href="https://www.apple.com/itunes/"></a>
-        <div class="downloads__links">
-          <a class="downloads__link downloads__link--apple" href="https://www.apple.com/itunes/">Магазин Apple</a>
-          <a class="downloads__link downloads__link--android" href="https://play.google.com/store">Магазин Android</a>
-          <a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows/">Магазин Windows</a>
-        </div>
+        <a class="downloads__button button" href="https://www.apple.com/itunes/">Скачать приложение</a>
+        <ul class="downloads__links">
+          <li class="downloads__item"><a class="downloads__link downloads__link--apple" href="https://www.apple.com/itunes/"><span class="visually-hidden">Магазин Apple</span></a></li>
+          <li class="downloads__item"><a class="downloads__link downloads__link--android" href="https://play.google.com/store"><span class="visually-hidden">Магазин Android</span></a></li>
+          <li class="downloads__item"><a class="downloads__link downloads__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows/"><span class="visually-hidden">Магазин Windows</span></a></li>
+        </ul>
         <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
       <section class="capability">
         <h2 class="visually-hidden">Возможности приложения</h2>
-        <p class="capability__text">Устали от серости мегаполиса?</p>
-        <p class="capability__text  capability__text--narrow">Нам есть, что вам предложить!</p>
+        <p class="capability__text  capability__text--first">Устали от серости мегаполиса?</p>
+        <p class="capability__text  capability__text--second">Нам есть, что вам предложить!</p>
         <ul class="capability__list capability-list">
           <li class="capability-list__item">
-            <b class="capability-list__title">Поднимает настроение</b>
+            <p class="capability-list__title">Поднимает настроение</p>
             <p class="capability-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="capability-list__item">
-            <b class="capability-list__title">Меняет мир вокруг</b>
+            <p class="capability-list__title">Меняет мир вокруг</p>
             <p class="capability-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="capability-list__item">
-            <b class="capability-list__title">Заводит новых друзей</b>
+            <p class="capability-list__title">Заводит новых друзей</p>
             <p class="capability-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -82,27 +84,37 @@
       <section class="reviews">
         <div class="reviews__wrapper  slider">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <div class="reviews__list  slider__list">
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author">Николай Петров<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author">Николай Петров<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <blockquote class="reviews__item  slider__item">
-              <cite class="reviews__author">Николай Петров<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <div class="slider__controls">
+            <label class="slider__controls-item slider-controls-item--1" for="product-1">Первый</label>
+            <label class="slider__controls-item slider-controls-item--2" for="product-2">Второй</label>
+            <label class="slider__controls-item slider-controls-item--3" for="product-3">Третий</label>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+          <ul class="reviews__list  slider__list">
+            <li class="slider__item">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров1<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров2<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+            <li class="slider__item">
+             <blockquote class="reviews__item">
+               <cite class="reviews__author">Николай Петров3<span class="reviews__notice">25 лет, водитель трамвая</span></cite>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по новому взгялнуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </li>
+          </ul>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+
         </div>
       </section>
       <section class="price">
